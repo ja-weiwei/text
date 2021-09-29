@@ -1,0 +1,191 @@
+* {
+  margin: 0; /* 覆盖浏览器默认样式 */
+  padding: 0; /* 覆盖浏览器默认样式 */
+  list-style: none; /* 覆盖浏览器默认样式，去掉列表左侧的编号 */
+  box-sizing: border-box; /* 所有元素使用边框盒度量宽高 */
+}
+a {
+  text-decoration: none; /* 覆盖浏览器默认样式，去掉超链接的下划线 */
+  color: inherit; /* 覆盖浏览器默认样式，让超链接的颜色继承父元素 */
+}
+a:hover {
+  color: #e10200; /* 统一设置超链接的鼠标悬停效果 */
+}
+body {
+  min-width: 1200px; /* PC端页面的常见做法，设置页面的最小宽度 */
+}
+
+/* 头部区域 */
+.header {
+  width: 990px;
+  height: 112px;
+  background: url(../img/topnav_bg.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -495px;
+  z-index: 1;
+}
+.header .logo {
+  position: absolute;
+  background: url(../img/logo.png);
+  width: 73px;
+  height: 94px;
+  top: 0;
+  left: 50%;
+  margin-left: -36.5px;
+}
+.header .logo h1 {
+  display: none;
+}
+.header .nav {
+  margin-top: 12px;
+  font-size: 15px;
+}
+.header .nav li {
+  float: left;
+  padding: 0 15px 0 19px;
+  background: url(../img/icon.png) 0 8px;
+}
+.header .nav-left {
+  float: left;
+  margin-left: 94px;
+}
+.header .nav-right {
+  float: right;
+  margin-right: 94px;
+}
+
+.bell {
+  position: absolute;
+  background: url(../img/bell.png);
+  width: 59px;
+  height: 107px;
+  right: 40px;
+  top: 54px;
+  transform-origin: center top;
+  animation: swing 5s infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+/* 浮萍区域 */
+.flows {
+  position: relative;
+}
+.flows .summer {
+  width: 100%;
+  display: block;
+}
+.flows .item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.flows .summer1 {
+  background: url(../img/summer1.png);
+  width: 93px;
+  height: 122px;
+  margin-left: -538px;
+  animation: flow1 5s infinite;
+}
+@keyframes flow1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.flows .summer2 {
+  background: url(../img/summer2.png);
+  width: 200px;
+  height: 314px;
+  margin-left: -348px;
+  animation: flow2 5s infinite;
+}
+@keyframes flow2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.flows .summer3 {
+  background: url(../img/summer3.png);
+  width: 245px;
+  height: 236px;
+  margin-left: -202px;
+  animation: flow3 5s infinite;
+}
+@keyframes flow3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.flows .summer4 {
+  background: url(../img/summer4.png);
+  width: 108px;
+  height: 97px;
+  margin-left: 69px;
+  animation: flow3 5s 2s infinite;
+}
+
+.flows .summer5 {
+  background: url(../img/summer5.png);
+  width: 60px;
+  height: 62px;
+  margin-left: 298px;
+  animation: flow2 5s infinite;
+}
+.flows .summer6 {
+  background: url(../img/summer6.png);
+  width: 257px;
+  height: 215px;
+  margin-left: 137px;
+  animation: flow6 5s infinite;
+}
+@keyframes flow6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* 新闻区域 */
+.news-container {
+  background: url(../img/title-1.png) no-repeat center top;
+  padding-top: 251px;
+  margin-top: -133px;
+  position: relative;
+  z-index: 1;
+}
